@@ -1,0 +1,54 @@
+:root{
+    --color: #ec1839;
+    --color-bubble: rgb(236, 24, 57,.5);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color);
+    border-radius: 10px;
+}
+.bubble {
+    background-color: var(--color-bubble);
+}
+.aside .logo a::before{
+    border-left: 4px solid var(--color);
+    border-top: 4px solid var(--color);
+}
+
+.aside .logo a::after{
+    border-bottom: 4px solid var(--color);
+    border-right: 4px solid var(--color);
+}
+
+.aside .nav li a:hover,
+.aside .nav li a.active,
+.about .about-content .about-text span,
+.project .project-item .project-item-inner .project-info .icon .fa,
+.service .service-item .service-item-inner .icon .fa,
+body.dark .aside .nav li a:hover,
+body.dark .aside .nav li a.active{
+    color: var(--color);
+}
+
+.aside .nav-toggle span,
+.aside .nav-toggle span::before,
+.aside .nav-toggle span::after,
+.home .intro .social-link a,
+.about .about-content .skills .skill-item .progress-in,
+.about .about-content .timeline .timeline-item::before,
+.about .about-content .timeline .cir-dot,
+.service .service-item .service-item-inner:hover .icon,
+.section-title h2::before,
+.section-title h2::after,
+.btn{
+    background-color: var(--color);
+}
+
+.about .about-content .info .btns .btn:hover{
+    color: var(--color);
+    box-shadow:0 5px 5px 0 var(--color);
+}
+/* body.dark .project .project-filter button.active, */
+.project .project-filter button.active{
+    color: var(--color);
+    border-color: var(--color);
+}
